@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="apple-mobile-web-app-title" content="PythonTOP,拓普Python学院">
-    <title>王斌的个人博客</title>
+    <meta name="apple-mobile-web-app-title" content="老王的个人博客">
+    <title>老王的个人博客</title>
     <link rel="stylesheet" href="./static/css/bootstrap.css">
     <link rel='stylesheet' id='bootstrap-css' href='{% static "css/bootstrap.min.css" %}' type='text/css' media='all'/>
     <link rel='stylesheet' id='fontawesome-css' href='{% static "css/font-awesome.min.css" %}' type='text/css' media='all'/>
@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="index-logo" href="/"><img style="width:120%;" src="{% static "picture/black-logo.png" %}" alt="王斌的个人博客"></a>
+          <a class="index-logo" href="/"><img style="width:120%;" src="{% static "picture/black-logo.png" %}" alt="老王的个人博客"></a>
         </div>
 
             <ul  class="nav navbar-nav" id="bs-example-navbar-collapse-1">
@@ -43,6 +43,7 @@
                 {% endfor %}
 
                 <li id="menu-item-117720" class="menu-item"><a href="/about/">关于博主</a></li>
+				<li id="menu-item-117720" class="menu-item"><a href="/admin/">登录</a></li>
                 <form method="get" class="navbar-form navbar-left " action="{% url 'index' %}s/">
                 <div class="form-group">
                 <input type="text" name="search" class="form-control" placeholder="请输入关键字">

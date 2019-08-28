@@ -6,8 +6,15 @@
             <li>
                 <div class="img">
                 <a href="{% url 'index' %}show-{{ k.id }}.html" title="{{ k.title }}">
-                <img src="{% url 'index' %}media/{{ k.img }}"
-                 srcset="{% url 'index' %}media/{{ k.img }}" alt="{{ k.title }}"
+				{% if k.img %}
+					<img src="{% url 'index' %}media/{{ k.img }}"
+					 srcset="{% url 'index' %}media/{{ k.img }}" 
+				{% else %}
+					<img src="/media/1.jpg"
+					 srcset="/media/1.jpg" 
+				{% endif %}
+               
+				 alt="{{ k.title }}"
                     class="wp-post-image" width="120" height="80"/>
                 </a>
                 </div>
@@ -33,14 +40,14 @@
 </section>
 </section><!-- /关注我们 -->
 <div class="post-right-item">
-    <h4 class="post-right-title">关注我们</h4>
+    <h4 class="post-right-title">扫码关注</h4>
     <div class="wid-about">
-        <p>拓普Python学院，欢迎关注！</p>
+        
         <img src="{% static "picture/weixinqr.jpg" %}" alt="微信二维码" width="160" height="160">
     </div>
     <div class="wid-about">
         <p><strong>联系方式:</strong></p>
-        <p>QQ:445813</p>
-        <p>Email：445813@qq.com</p>
+        <p>QQ:55653662</p>
+        <p>Email：55653662@qq.com</p>
     </div>
 </div>

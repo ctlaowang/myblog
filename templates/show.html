@@ -57,8 +57,14 @@
                         <li>
                          <div class="pic">
                            <a href="{% url 'index' %}show-{{ h.id }}.html" title="{{ h.title }}">
-                           <img src="{% url 'index' %}media/{{ h.img }}"
-                             srcset="{% url 'index' %}media/{{ h.img }}"
+						   {% if h.img %}
+							   <img src="{% url 'index' %}media/{{ h.img }}"
+								 srcset="{% url 'index' %}media/{{ h.img }}"
+						   {% else %}
+							   <img src="media/1.jpg"
+								 srcset="media/1.jpg"
+						   {% endif %}
+                           
                              alt="{{ h.title }}" class="wp-post-image" width="145" height="100"/></a>
                           </div>
                             <a class="descript " href="{% url 'index' %}show-{{ h.id }}.html" rel="bookmark"
