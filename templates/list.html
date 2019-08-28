@@ -6,7 +6,7 @@
                 <span class="current">{{ cname }} </span></div>
             <div class="index-main clearfix">
                 <div class="main-title">
-                    <h4 class="post-left-title">分类：{{ cname}}</h4>
+                    <h4 class="post-left-title">分类：{{cname}}</h4>
                 </div>
                 <div class="row">
                     {% for list in list %}
@@ -14,9 +14,18 @@
                             <div class="col-md-4">
                                 <div class="thumbnail">
                                     <a href="{% url 'index' %}show-{{ list.id }}.html" title="{{ list.title }}">
-                                        <img src="media/{{ list.img }}"
+                                        {% if list.img %}
+                                            <img src="media/{{ list.img }}"
                                              srcset="media/{{ list.img }}"
+                                        {% else %}
+                                            <img src="media/1.jpg"
+                                             srcset="media/1.jpg"
+                                        {% endif %}
+                                        
+
+
                                              alt="{{ list.title }}" class="wp-post-image" width="240" height="160"/></a>
+                                        }
                                 </div>
                             </div>
                             <div class="col-md-8">
