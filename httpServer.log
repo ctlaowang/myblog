@@ -1,0 +1,90 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 28 22:09:00 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 28 August 2019 13:53:55
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: wangbindeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/wangbin/Desktop/myblog
+detected binary path: /Users/wangbin/virtualenvs/django_env/bin/uwsgi
+chdir() to /Users/wangbin/Desktop/myblog/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:50000 fd 6
+Python version: 3.7.3 (default, Mar 27 2019, 09:23:15)  [Clang 10.0.1 (clang-1001.0.46.3)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7ffb96701a70
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364440 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "/Users/wangbin/Desktop/myblog/wsgi.py", line 3, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3132)
+spawned uWSGI worker 1 (pid: 3133, cores: 1)
+spawned uWSGI worker 2 (pid: 3134, cores: 1)
+spawned uWSGI worker 3 (pid: 3135, cores: 1)
+spawned uWSGI worker 4 (pid: 3136, cores: 1)
+*** Stats server enabled on 127.0.0.1:9090 fd: 18 ***
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/wangbin/Desktop/myblog
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 6 mapped to socket 0 (127.0.0.1:50000)
+running /Users/wangbin/virtualenvs/django_env/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 28 22:35:01 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 28 August 2019 13:53:55
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: wangbindeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/wangbin/Desktop/myblog
+detected binary path: /Users/wangbin/virtualenvs/django_env/bin/uwsgi
+chdir() to /Users/wangbin/Desktop/myblog/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:3031 fd 3
+Python version: 3.7.3 (default, Mar 27 2019, 09:23:15)  [Clang 10.0.1 (clang-1001.0.46.3)]
+Python main interpreter initialized at 0x7ff47de021b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416560 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file myblog/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 3132)
+spawned uWSGI worker 1 (pid: 3903, cores: 2)
+spawned uWSGI worker 2 (pid: 3904, cores: 2)
+spawned uWSGI worker 3 (pid: 3905, cores: 2)
+spawned uWSGI worker 4 (pid: 3906, cores: 2)
+*** Stats server enabled on 127.0.0.1:9090 fd: 15 ***
+Wed Aug 28 22:35:28 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug 28 22:35:28 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug 28 22:35:28 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug 28 22:35:28 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug 28 22:35:28 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug 28 22:35:28 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug 28 22:35:28 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug 28 22:35:28 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
